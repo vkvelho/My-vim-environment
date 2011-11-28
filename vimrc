@@ -30,7 +30,7 @@ endif
  
 " Use different colorscheme for vimdiff
 if &diff
-  colorscheme greens
+  colorscheme peaksea
 endif
 
 nnoremap <F5> :GundoToggle<CR>

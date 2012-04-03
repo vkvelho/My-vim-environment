@@ -3,7 +3,7 @@ filetype plugin indent on
 
 colorscheme greens
 
-set encoding=iso-8859-1
+"set encoding=iso-8859-1
 
 set nocompatible
 set backspace=eol,start,indent

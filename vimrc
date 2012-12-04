@@ -1,13 +1,11 @@
 call pathogen#infect()
+syntax on
 filetype plugin indent on
 
-colorscheme greens
-
-"set encoding=iso-8859-1
+set encoding=utf-8
 
 set nocompatible
 set backspace=eol,start,indent
-syn on
 
 set expandtab
 set shiftwidth=2
@@ -15,7 +13,6 @@ set softtabstop=2
 set tabstop=2
 
 set laststatus=2
-set statusline=%t\ %{fugitive#statusline()};\ %y%=\ [%c,%l]\ %P
 
 if &term =~ "xterm"
  set t_Co=256
@@ -27,11 +24,13 @@ if &term =~ "xterm"
    let &t_Sb=nr2char(27).'[4%dm'
  endif
 endif
- 
+
+colorscheme ir_black
 " Use different colorscheme for vimdiff
 if &diff
   colorscheme peaksea
 endif
 
-nnoremap <F5> :GundoToggle<CR>
+set guioptions-=T "remove toolbar
+set guifont=Monaco:h9:cANSI
 
